@@ -141,8 +141,8 @@ async function getAccessToken() {
 
 // ==================== API 路由 ====================
 
-// 根路径
-app.get('/', (req, res) => {
+// API 健康检查端点
+app.get('/api/health', (req, res) => {
   res.json({
     message: '智灌管家全栈服务运行中',
     version: '1.0.0',
