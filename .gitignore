@@ -46,6 +46,23 @@ npm-debug.log*
 .idea/
 *.iml
 
+### Electron (Desktop App) - 不需要部署到 Railway ###
+electron/
+*.dmg
+*.exe
+*.zip
+dist-electron/
+
+### Deployment scripts ###
+railway-deploy.sh
+railway-deploy.bat
+.railwayignore
+
+### Environment files ###
+.env
+.env.local
+.env.*.local
+
 ### Old/unused files ###
 test-backend.js
 install.bat
